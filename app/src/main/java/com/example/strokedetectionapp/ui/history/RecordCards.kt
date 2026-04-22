@@ -83,6 +83,14 @@ fun FacialRecordCard(
                     Text("Eye Droop", style = MaterialTheme.typography.bodySmall)
                     Text("${detection.eyeDroopRatio.toInt()}%", style = MaterialTheme.typography.bodyMedium)
                 }
+                Column {
+                    Text("Confidence", style = MaterialTheme.typography.bodySmall)
+                    Text(
+                        "${detection.confidence.toInt()}%",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = if (detection.confidence >= 60) Color(0xFF2E7D32) else Color(0xFFFFC107)
+                    )
+                }
             }
         }
     }

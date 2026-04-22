@@ -26,6 +26,7 @@ data class FacialDetectionEntity(
     val eyeDroopRatio: Float,
     val mouthAsymmetryDetected: Boolean,
     val eyeDroopDetected: Boolean,
+    val confidence: Float = 0f,
     val notes: String = ""
 )
 
@@ -80,7 +81,7 @@ interface HandExerciseDao {
 
 @Database(
     entities = [FacialDetectionEntity::class, HandExerciseEntity::class],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {

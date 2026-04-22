@@ -61,7 +61,7 @@ fun HomeScreen(
                 )
             ) {
                 Text(
-                    text = "📸 Facial Analysis",
+                    text = "🧠 Facial Analysis (AI)",
                     style = MaterialTheme.typography.titleMedium
                 )
             }
