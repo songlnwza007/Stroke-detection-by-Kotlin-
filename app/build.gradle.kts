@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.storkedetectionapp"
+    namespace = "com.example.strokedetectionapp"
     compileSdk = 35
 
     sourceSets {
@@ -16,7 +16,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.storkedetectionapp"
+        applicationId = "com.example.strokedetectionapp"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
